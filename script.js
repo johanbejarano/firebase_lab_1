@@ -60,7 +60,7 @@ $('#enviar').click(function(){
 //Funcion que gurada el mensaje en firebase
 function guardarMensajeEnFirebase(textoMensaje){
     const mensaje = {
-        fecha: new Date(),
+        fecha: Date.now(),
         uid: usuarioAutenticado.uid,
         text: textoMensaje
     }
